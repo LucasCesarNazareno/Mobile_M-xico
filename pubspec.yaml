@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 0.1.0+1
 
 environment:
-  sdk: ^3.11.5
+  sdk: ^3.10.1
 
 dependencies:
   flutter:
@@ -18,7 +18,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-     - img/MÉXICO.jpg
-     - img/culinaria.jpg
-     - img/cultura.jpg
-     - img/geografia.jpg
+    - img/MÉXICO.jpg
+    - img/culinaria.jpg
+    - img/cultura.jpg
+    - img/geografia.jpg
+    - img/lucas.jpg
+    - img/guilherme.jpg
