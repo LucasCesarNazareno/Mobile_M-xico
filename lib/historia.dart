@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CulinariaPage extends StatelessWidget {
-  const CulinariaPage({super.key});
+class HistoriaPage extends StatelessWidget {
+  const HistoriaPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class CulinariaPage extends StatelessWidget {
               width: double.infinity, 
               height: 250,            
               child: Image.asset(
-                'img/culinaria.jpg',
+                'img/historia.jpg',
                 fit: BoxFit.cover,    
               ),
             ),
@@ -34,7 +34,7 @@ class CulinariaPage extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Center(
                 child: Text(
-                  "CULINÁRIA",
+                  "HISTÓRIA",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 32, 
@@ -72,7 +72,7 @@ class CulinariaPage extends StatelessWidget {
                       ),
                       padding: const EdgeInsets.all(12.0),
                       child: const Text(
-                        "A culinária mexicana é considerada Patrimônio Cultural Imaterial da Humanidade. Ela combina ingredientes tradicionais utilizados pelos povos indígenas, como milho, feijão, pimentas e abacate, com influências da culinária espanhola",
+                        "Muito antes da chegada dos europeus, o território mexicano era ocupado por maias, astecas e toltecas. Esses povos desenvolveram conhecimentos avançados em matemática, astronomia, arquitetura e agricultura.",
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                           color: Colors.white,
@@ -82,13 +82,13 @@ class CulinariaPage extends StatelessWidget {
                       ),
                     ),
                   ),
-
+                  
                   const SizedBox(width: 10),
                   
                   ClipRRect(
                     borderRadius: BorderRadius.circular(12),
                     child: Image.asset(
-                      'img/tacos.jpg',
+                      'img/asteca.png',
                       width: 180,
                       height: 180,
                       fit: BoxFit.cover,
@@ -102,7 +102,7 @@ class CulinariaPage extends StatelessWidget {
               child: Transform.translate(
                 offset: const Offset(0, -130), 
                 child: Image.asset(
-                  'img/comidas.png',
+                  'img/templo.png',
                   width: 400,
                   height: 400,
                   fit: BoxFit.contain,
@@ -120,7 +120,7 @@ class CulinariaPage extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12),
                       child: Image.asset(
-                        'img/restaurante.jpg',
+                        'img/monumento.png',
                         width: 180,
                         height: 180,
                         fit: BoxFit.cover,
@@ -137,7 +137,7 @@ class CulinariaPage extends StatelessWidget {
                         ),
                         padding: const EdgeInsets.all(12.0),
                         child: const Text(
-                          "Entre os pratos típicos mais conhecidos estão os tacos, tortillas, burritos, nachos, guacamole, chilli com carne, mixiote e tamales. As bebidas tradicionais incluem tequila, mezcal, cerveja, rum e piña colada.",
+                          "Entre 1519 e 1521, o conquistador espanhol Hernán Cortés derrotou o Império Asteca, iniciando a colonização espanhola. O território passou a fazer parte do Vice-Reino da Nova Espanha.",
                           textAlign: TextAlign.justify,
                           style: TextStyle(
                             color: Colors.white,
@@ -145,6 +145,60 @@ class CulinariaPage extends StatelessWidget {
                             height: 1.4,
                           ),
                         ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            Center(
+              child: Transform.translate(
+                offset: const Offset(0, -400),
+                child: Image.asset(
+                  'img/simbolo.png',
+                  width: 400,
+                  height: 400,
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
+
+            Transform.translate(
+              offset: const Offset(0, -540),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFC8102E),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        padding: const EdgeInsets.all(12.0),
+                        child: const Text(
+                          "A independência do México começou a ser conquistada em 1810 e foi consolidada em 1821. Em 1824, o país tornou-se oficialmente uma república. Em 1846 ocorreu a Guerra do México contra os Estados Unidos. Após a derrota, o país perdeu grande parte de seu território, incluindo regiões que atualmente pertencem aos estados norte-americanos do Texas, Califórnia, Nevada, Utah e Novo México.",
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            height: 1.4,
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                    const SizedBox(width: 10),
+                    
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset(
+                        'img/guerra.jpg',
+                        width: 180,
+                        height: 180,
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ],

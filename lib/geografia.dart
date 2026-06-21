@@ -5,22 +5,20 @@ class GeografiaPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Captura os argumentos enviados pela rota
     final String tituloRecebido = ModalRoute.of(context)!.settings.arguments as String;
 
     return Scaffold(
       appBar: AppBar(
         title: Text(tituloRecebido),
-        backgroundColor: const Color(0xFF006341), // Verde
+        backgroundColor: const Color(0xFF006341),
         foregroundColor: Colors.white,
         elevation: 1,
       ),
-      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Colors.white,
       body: SingleChildScrollView( 
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start, 
           children: [
-            // 1. Imagem fixa no topo
             SizedBox(
               width: double.infinity, 
               height: 250,            
@@ -32,7 +30,6 @@ class GeografiaPage extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // 2. Título "Cultura" Centralizado
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Center(
@@ -48,7 +45,6 @@ class GeografiaPage extends StatelessWidget {
               ),
             ),
             
-            // 3. Imagem do Bigode colada
             Center(
               child: Transform.translate(
                 offset: const Offset(0, -20),
@@ -63,7 +59,6 @@ class GeografiaPage extends StatelessWidget {
             
             const SizedBox(height: 10),
 
-            // 4. Caixa de Texto Vermelha e Imagem à direita lado a lado
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
@@ -88,7 +83,8 @@ class GeografiaPage extends StatelessWidget {
                     ),
                   ),
                   
-                  // Imagem fora da caixa (Danca)
+                  const SizedBox(width: 8),
+                  
                   ClipRRect(
                     borderRadius: BorderRadius.circular(12),
                     child: Image.asset(
@@ -102,12 +98,11 @@ class GeografiaPage extends StatelessWidget {
               ),
             ),
 
-            // 4. Imagem do Cacto
             Center(
               child: Transform.translate(
-                offset: const Offset(0, -20), 
+                offset: const Offset(0, 0), 
                 child: Image.asset(
-                  'img/cacto.png',
+                  'img/pais.png',
                   width: 200,
                   height: 200,
                   fit: BoxFit.contain,
@@ -115,26 +110,25 @@ class GeografiaPage extends StatelessWidget {
               ),
             ),
 
-            // 5. Segunda Row puxada para cima para colar no cacto
             Transform.translate(
-              offset: const Offset(0, -60),
+              offset: const Offset(0, 0),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [                  
-                    // Imagem fora da caixa (Caveira)
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12),
                       child: Image.asset(
-                        'img/danca.png',
+                        'img/clima.png',
                         width: 180,
                         height: 180,
                         fit: BoxFit.cover,
                       ),
                     ),
 
-                    // Caixa vermelha com texto
+                    const SizedBox(width: 8),
+
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
@@ -160,9 +154,9 @@ class GeografiaPage extends StatelessWidget {
 
             Center(
               child: Transform.translate(
-                offset: const Offset(0, -20), 
+                offset: const Offset(0, 0), 
                 child: Image.asset(
-                  'img/cacto.png',
+                  'img/rosa.png',
                   width: 200,
                   height: 200,
                   fit: BoxFit.contain,
@@ -194,7 +188,8 @@ class GeografiaPage extends StatelessWidget {
                     ),
                   ),
                   
-                  // Imagem fora da caixa (Danca)
+                  const SizedBox(width: 8),
+                  
                   ClipRRect(
                     borderRadius: BorderRadius.circular(12),
                     child: Image.asset(
@@ -208,12 +203,11 @@ class GeografiaPage extends StatelessWidget {
               ),
             ),
 
-            // 4. Imagem do Cacto
             Center(
               child: Transform.translate(
-                offset: const Offset(0, -20), 
+                offset: const Offset(0, 0), 
                 child: Image.asset(
-                  'img/cacto.png',
+                  'img/globo.jpg',
                   width: 200,
                   height: 200,
                   fit: BoxFit.contain,
@@ -221,15 +215,13 @@ class GeografiaPage extends StatelessWidget {
               ),
             ),
 
-            // 5. Segunda Row puxada para cima para colar no cacto
             Transform.translate(
-              offset: const Offset(0, -60),
+              offset: const Offset(0, 0),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [                  
-                    // Imagem fora da caixa (Caveira)
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12),
                       child: Image.asset(
@@ -240,7 +232,8 @@ class GeografiaPage extends StatelessWidget {
                       ),
                     ),
 
-                    // Caixa vermelha com texto
+                    const SizedBox(width: 8),
+
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
@@ -266,9 +259,9 @@ class GeografiaPage extends StatelessWidget {
             
             Center(
               child: Transform.translate(
-                offset: const Offset(0, -20), 
+                offset: const Offset(0, 0), 
                 child: Image.asset(
-                  'img/cacto.png',
+                  'img/minimapa.jpg',
                   width: 200,
                   height: 200,
                   fit: BoxFit.contain,
@@ -300,11 +293,12 @@ class GeografiaPage extends StatelessWidget {
                     ),
                   ),
                   
-                  // Imagem fora da caixa (Danca)
+                  const SizedBox(width: 8),
+                  
                   ClipRRect(
                     borderRadius: BorderRadius.circular(12),
                     child: Image.asset(
-                      'img/economia.png',
+                      'img/economia.jpg',
                       width: 180,
                       height: 180,
                       fit: BoxFit.cover,
@@ -313,7 +307,6 @@ class GeografiaPage extends StatelessWidget {
                 ],
               ),
             ),
-
           ],
         ),
       ),

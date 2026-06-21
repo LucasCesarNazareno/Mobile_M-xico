@@ -22,6 +22,7 @@ flutter:
     - img/culinaria.jpg
     - img/cultura.jpg
     - img/geografia.jpg
+    - img/historia.jpg
     - img/lucas.jpg
     - img/guilherme.jpg
     - img/bigode.png
@@ -32,8 +33,17 @@ flutter:
     - img/restaurante.jpg
     - img/comidas.png
     - img/mapa.jpg
-    - img/clima.jpg
     - img/populacao.jpg
-    - img/politica.jpg
     - img/economia.jpg
+    - img/clima.png
+    - img/globo.jpg
+    - img/minimapa.jpg
+    - img/pais.png
+    - img/politica.png
+    - img/rosa.png
+    - img/guerra.jpg
+    - img/monumento.png
+    - img/asteca.png
+    - img/templo.png
+    - img/simbolo.png
    
